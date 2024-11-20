@@ -1,64 +1,57 @@
-### 基于JAVA和mysql实现的学校餐厅订餐数据库
+# School Canteen Ordering System Based on Java and MySQL
 
-#### 结构：
+## Project Structure:
 
 ```
 code
 │
 └── lib
-	├── hutool-all-5.8.10.jar
-	└── mysql-connector-j-8.0.31.jar
+    ├── hutool-all-5.8.10.jar
+    └── mysql-connector-j-8.0.31.jar
 ├── out/production/untitled
-	├── service
-		├── GoodsService.class
-		├── OrderService.class
-		├── RestService.class
-		└── StuService.class
-	└── view
-		├── LoginFrame.class
-		├── LoginFrame$1.class
-		├── LoginFrame$2.class
-		└── MainFrame.class
+    ├── service
+        ├── GoodsService.class
+        ├── OrderService.class
+        ├── RestService.class
+        └── StuService.class
+    └── view
+        ├── LoginFrame.class
+        ├── LoginFrame$1.class
+        ├── LoginFrame$2.class
+        └── MainFrame.class
 └── src
-	├── service
-		├── GoodsService.java
-		├── OrderService.java
-		├── RestService.java
-		└── StuService.java
-	└── view
-		├── AddGoodsFrame.java
-		├── LoginFrame.java
-		├── MainFrame.java
-		└── UpdateGoodesFrame.java
-
+    ├── service
+        ├── GoodsService.java
+        ├── OrderService.java
+        ├── RestService.java
+        └── StuService.java
+    └── view
+        ├── AddGoodsFrame.java
+        ├── LoginFrame.java
+        ├── MainFrame.java
+        └── UpdateGoodesFrame.java
 ```
 
-`src`和`out/production/untitled`都包含`service`和`view`两个包
+Both `src` and `out/production/untitled` contain two packages: `service` and `view`.
 
+## Features:
 
+- Student Recharge and Meal Ordering
+- Canteen Manager Inventory Management
 
-#### 功能：
+## Usage:
 
-* 学生充值、订餐
-* 餐厅经历管理库存
+### 1. MySQL Configuration
 
+Run `./data/db_order.sql` or import `./data/db_order.sql` into MySQL Workbench to create the required database and tables.
 
+### 2. JDK Configuration
 
-#### 使用：
+Configure the Java Development Kit (JDK) on your system.
 
-1. mysql配置
+### 3. Running the Application
 
-   运行`./data/db_order.sql`或者再MySQL WorkBench中导入`./data/db_order.sql`，创建所需的databse和table
+The `.java` files are located in `code/src/`. After compiling, the compiled `.class` files will be generated in `code/out/production/untitled`. The application can then be run.
 
-2. jdk配置
-
-   配置java
-
-3. 运行
-
-   `code/src/`中是java文件，编译之后在`code/out/production/untitled`中生成编译后的.class文件，运行即可
-
-   用vscode打开直接`run`即可
-
-
+If you are using Visual Studio Code, you can simply run the project directly.
 
